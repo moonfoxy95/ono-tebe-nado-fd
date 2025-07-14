@@ -1,1 +1,149 @@
 /* место для вашего кода */
+/* GLOBALS */
+
+body {
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER */
+
+.header {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-items: center;
+  align-items: center;
+  min-height: 293px;
+}
+
+.header__menu {    
+  width: 100%;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.header__menu-item_active .header__menu-link {
+  text-decoration: none;
+}
+
+.header__logo-image {
+  width: 105px;
+  height: 148px;
+}
+
+.header__adress {
+  justify-self:end;
+  max-width: 240px;
+  font-style: normal;
+  line-height: 135%;
+}
+
+/* SECTION 1 */
+
+.cover {
+  color: white;
+  text-transform: uppercase;
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -150px;  
+  width: 1100px;
+  height: 757px; 
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .4);
+  
+}
+
+.cover__title {  
+  z-index: 1;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing:0.3em;
+  width: 100%;
+  padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;  
+}
+
+.description {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  line-height: 28px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;  
+}
+
+.description__text {
+  width: 637px;
+  text-align-last: justify;
+}
+
+.description__button {
+  display: block;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-weight: 500;
+  padding: 12px 30px;
+
+
+}
+
+
+
+
+/* SECTION 2 */
+
+.lots {
+  padding: 180px 60px 120px 24px;
+}
+
+/* SECTION 3 */
+
+.about {
+  padding: 60px 120px 24px
+}
+
+/* FOOTER */
+
+.footer {
+  padding-top: 60px;
+}
