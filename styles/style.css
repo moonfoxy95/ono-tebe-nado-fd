@@ -15,6 +15,25 @@ a {
   text-decoration: none;
 }
 
+.overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.address {
+  font-style: normal;
+  line-height: 135%;
+}
+
+.number,
+.email {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 /* HEADER */
 
 .header {
@@ -23,9 +42,10 @@ a {
   justify-items: center;
   align-items: center;
   gap: 30px;
-  min-height: 293px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-top: 92px;
+  padding-bottom: 93px;
 }
 
 .header__menu {
@@ -44,7 +64,7 @@ a {
   list-style-type: circle;
 }
 
-.header__menu-item.header__menu-item_active {
+.header__menu-item_no-bullit {
   list-style: none;
 }
 
@@ -60,7 +80,7 @@ a {
 .header__logo {
   width: 148px;
   height: 108px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   /* pixel-perfect */
   padding-left: 1px;
   /* pixel-perfect */
@@ -71,26 +91,13 @@ a {
   height: 100%;
 }
 
-.header__adress {
+.header__address {
+  max-width: 241px;
   justify-self: end;
-  max-width: 240px;
   padding-bottom: 3px;
-  font-style: normal;
-  line-height: 135%;
   /* pixel-perfect */
-}
-
-.header__number,
-.header__email {
-  text-decoration: underline;
-}
-
-.header__number {
-  text-underline-offset: 4px;
-}
-
-.header__email {
-  text-underline-offset: 3px;
+  padding-left: 2px;
+  /* pixel-perfect */
 }
 
 /* SECTION 1 */
@@ -105,18 +112,10 @@ a {
   min-height: 757px;
   color: white;
   text-transform: uppercase;
-  background-image: url(/images/cover.jpg);
+  background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: -136px;
   background-size: cover;
-}
-
-.cover:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .cover__title {
@@ -218,24 +217,16 @@ a {
   background-size: cover;
 }
 
-.lots__card-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .card-film {
-  background-image: url("/images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card-book {
-  background-image: url("/images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card-picture {
-  background-image: url("/images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .card__link {
@@ -337,20 +328,13 @@ a {
   padding-top: 60px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-bottom: 82px;
 }
 
 .footer__address {
   max-width: 260px;
   padding-left: 1px;
-  font-style: normal;
-  line-height: 135%;
   /* pixel-perfect */
-}
-
-.footer__number,
-.footer__email {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .footer__menu {

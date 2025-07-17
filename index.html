@@ -15,7 +15,7 @@
   <header class="header">
     <nav class="header__menu">
       <ul class="header__menu-list">
-        <li class="header__menu-item header__menu-item_active">
+        <li class="header__menu-item header__menu-item_no-bullit header__menu-item_active">
           <a class="header__menu-link" href="#">главная</a>
         </li>
         <li class="header__menu-item">
@@ -29,16 +29,16 @@
     <a class="header__logo" href="#">
       <img class="header__logo-image" src="./images/logo-black.svg" alt="Черный логотип" />
     </a>
-    <address class="header__adress">
+    <address class="header__address address">
       <ul class="header__adress-list">
-        <li class="header__adress-item">
-          <a class="header__number" href="tel:+9 999 555 5555">+9 999 555 5555</a>
+        <li class="header__adress-item number">
+          <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
         </li>
-        <li class="header__adress-item">
-          <a class="header__email" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <li class="header__adress-item email">
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
-        <li class="header__adress-item">
-          <p class="header__location">
+        <li class="header__adress-item location">
+          <p class="">
             наб. Принсенграхт 263- 265, Амстердам
           </p>
         </li>
@@ -47,7 +47,8 @@
   </header>
 
   <main>
-    <section class="cover" id="cover">
+    <section class="cover " id="cover">
+      <div class="overlay"></div>
       <h1 class="cover__title">
         <span class="accent-span text-left">ОНО</span>
         <span class="accent-span text-center">ТЕБ<span class="last-letter">Е</span></span>
@@ -65,6 +66,7 @@
       <h2 class="lots__title">Лоты</h2>
       <ul class="lots__cards-list">
         <li class="lots__card-item card-film">
+          <div class="overlay"></div>
           <a class="card__link" href="#">
             <article class="card_content">
               <h3 class="card__title">
@@ -79,6 +81,7 @@
           </a>
         </li>
         <li class="lots__card-item card-book">
+          <div class="overlay"></div>
           <a class="card__link" href="#">
             <article class="card_content">
               <h3 class="card__title">
@@ -96,6 +99,7 @@
           </a>
         </li>
         <li class="lots__card-item card-picture">
+          <div class="overlay"></div>
           <a class="card__link" href="#">
             <article class="card_content">
               <h3 class="card__title">
@@ -140,16 +144,16 @@
   </main>
 
   <footer class="footer">
-    <address class="footer__address">
+    <address class="footer__address address">
       <ul class="footer__address-list">
-        <li class="footer__address-item">
-          <a class="footer__number" href="tel:+9 999 555 5555">+9 999 555 5555</a>
+        <li class="footer__address-item number">
+          <a href="tel:+9 999 555 5555">+9 999 555 5555</a>
         </li>
-        <li class="footer__address-item">
-          <a class="footer__email" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <li class="footer__address-item email">
+          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
-        <li class="footer__address-item">
-          <p class="footer__location">
+        <li class="footer__address-item location">
+          <p>
             наб. Принсенграхт 263- 265, Амстердам
           </p>
         </li>
